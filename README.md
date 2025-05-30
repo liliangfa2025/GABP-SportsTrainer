@@ -1,53 +1,63 @@
-# 🧠 AI-Driven Sports Training Optimization with GABP Neural Network
+# 🏋️‍♂️ GABP-Based Sports Training Effect Research
 
-## 📘 Overview
+## 📚 Overview
 
-This project explores the application of a **GABP neural network**—an enhanced model that integrates **Genetic Algorithms (GA)** with the **Backpropagation (BP)** neural network—to revolutionize the effectiveness of sports training programs. Through the power of **Artificial Intelligence (AI)**, this system offers intelligent, personalized, and adaptive training solutions for athletes across various disciplines.
+This project investigates the application of **Generalized Adaptive Backpropagation (GABP)** neural networks—an AI model combining Genetic Algorithms (GA) with Backpropagation (BP)—to optimize and evaluate sports training effectiveness.  
+The goal is to build an intelligent and personalized training system for athletes, leveraging biometric signals, performance data, and training logs for adaptive learning.
 
-## 🚀 Features
+The repository contains the core model implementations, utility functions, training scripts, evaluation pipelines, and unit tests to support reproducible research and further development.
 
-- 🔄 **Hybrid GABP Neural Network**: Combines the global optimization capabilities of Genetic Algorithms with the adaptive learning of BP neural networks.
-- 📊 **Data-Driven Training Evaluation**: Processes comprehensive input data (biometrics, training logs, performance stats) to assess and improve training effectiveness.
-- 🎯 **Precision Optimization**: Identifies performance plateaus and prescribes intelligent adjustments to training routines.
-- 🧬 **Enhanced Convergence**: Overcomes the limitations of conventional BP networks by avoiding local minima and improving training accuracy.
-- 🧑‍🏫 **Personalized Coaching**: Supports individualized training strategies based on real-time data analytics and predictive modeling.
+---
 
-## 🧪 Experimental Results
+## 🏗️ Project Structure
 
-Athletes who engaged with the AI-enhanced training protocols demonstrated:
+GABP-Sports-Training/ │ ├── data/ # Raw and processed data for training and evaluation ├── models/ # Core models (GABP, BP baseline, GA utilities) ├── results/ # Experiment results (plots, reports) ├── src/ # Training, evaluation, inference scripts and config ├── tests/ # Unit tests for models and utilities ├── .gitignore # Files to ignore in version control ├── LICENSE # License file (e.g., MIT) ├── README.md # This file ├── requirements.txt # Python dependencies └── setup.py # (Optional) Package setup script
 
-- ✅ Faster improvement in key performance metrics.
-- ✅ Higher training efficiency.
-- ✅ Better adaptation to customized coaching regimes.
 
-## 🧱 Technology Stack
+---
 
-- **Python**
-- **TensorFlow / PyTorch** (for neural network modeling)
-- **SciPy / NumPy** (for genetic algorithm implementation)
-- **Pandas / Matplotlib** (for data analysis and visualization)
-- **Jupyter Notebook** (for experimentation and result tracking)
+## 🚀 Quick Start
 
-## 📂 Repository Structure
+### 1️⃣ Install dependencies
 
-├── data/ # Raw and processed datasets ├── models/ # GABP neural network implementation ├── notebooks/ # Experiments and evaluations ├── utils/ # Preprocessing, evaluation metrics ├── results/ # Output visualizations and logs ├── README.md # Project overview └── requirements.txt # Dependencies
-## 🛠️ Getting Started
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/gabp-sports-training-ai.git
-   cd gabp-sports-training-ai
+```bash
 pip install -r requirements.txt
-python train_model.py
-📚 Related Work
-This project builds upon research in the fields of:
+2️⃣ Configure hyperparameters
+Edit the file src/config.yaml to adjust:
+Model input, hidden, and output sizes
+Training epochs
+Genetic Algorithm parameters (population size, mutation rate, generations)
+3️⃣ Train the model
+python src/train.py
+4️⃣ Evaluate the model
+python src/evaluate.py
+5️⃣ Run inference
+python src/inference.py
 
-Neural network optimization
-Evolutionary algorithms
-Biometric data analysis in sports
-Personalized AI coaching systems
-📈 Future Directions
-Integration with wearable IoT devices
-Real-time feedback loops during live training
-Expansion to team-based tactical analysis
-Deployment as a web/mobile coaching platform
+
+
+📦 Features
+✅ GABP Neural Network: Combines Genetic Algorithms with Backpropagation for improved convergence and accuracy.
+✅ Baseline BP Model: For comparative experiments.
+✅ Data Handling Utilities: For normalization, splitting, and error metrics.
+✅ Unit Tests: Ensure core functions are working as expected.
+✅ Configurable: Modify hyperparameters via config.yaml.
+
+
+🧪 Testing
+Run all tests:
+python -m unittest discover -s tests
+
+Or run individual test files:
+python tests/test_models.py
+python tests/test_utils.py
+
+📊 Experimental Results
+Results and visualizations (e.g., MSE, learning curves) are saved in the results/ directory after experiments.
+
+📄 License
+This project is licensed under the MIT License. See LICENSE for details.
+
+🤝 Contributions
+Contributions, improvements, and feedback are welcome!
+Feel free to open issues or submit pull requests.
