@@ -1,0 +1,27 @@
+numpy>=1.23.0
+pandas>=1.5.0
+scikit-learn>=1.1.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
+scipy>=1.10.0
+
+# 深度学习框架 (根据你的选择，可以选择其中一个或同时支持)
+tensorflow>=2.12.0
+# 或者
+# torch>=2.0.0
+# torchvision>=0.15.0
+
+# 遗传算法工具 (如果需要)
+deap>=1.3.3
+
+# 处理可穿戴设备数据和生物信号 (可选)
+wfdb>=4.0.0
+mne>=1.3.0
+
+# 可选: 配置与日志管理
+PyYAML>=6.0
+loguru>=0.7.0
+
+# Jupyter环境 (可选，如果需要运行.ipynb交互式代码)
+# jupyterlab>=4.0.0
+# notebook>=7.0.0
